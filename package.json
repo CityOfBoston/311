@@ -16,7 +16,9 @@
     "lint": "eslint --fix .",
     "generate-schema": "babel-node ./scripts/generate-schema",
     "generate-graphql-flow": "apollo-codegen generate data/graphql/*.graphql --schema graphql/schema.json --target flow --output data/graphql/schema.flow.js",
-    "clear-babel-cache": "rm -rf node_modules/.cache/babel-loader"
+    "clear-babel-cache": "rm -rf node_modules/.cache/babel-loader",
+    "precommit": "eslint --quiet .",
+    "prepush": "flow check --quiet && jest --silent --noStackTrace"
   },
   "jest": {
     "testPathIgnorePatterns": [
@@ -69,6 +71,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "flow-bin": "^0.39.0",
+    "husky": "^0.13.1",
     "jest": "^18.1.0",
     "react-test-renderer": "^15.4.2",
     "webpack-bundle-analyzer": "^2.3.0"

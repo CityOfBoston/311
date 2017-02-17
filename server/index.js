@@ -41,6 +41,9 @@ const port = parseInt(process.env.PORT || '3000', 10);
             }],
           }, {
             module: 'good-console',
+            args: [{
+              color: process.env.NODE_ENV !== 'production',
+            }],
           },
           'stdout',
         ],
