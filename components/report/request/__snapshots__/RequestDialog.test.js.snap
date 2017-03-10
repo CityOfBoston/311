@@ -43,7 +43,8 @@ exports[`rendering contact 1`] = `
           }
         >
           <span>
-            First Name (required)
+            First Name 
+            (required)
           </span>
           <input
             className={
@@ -65,7 +66,8 @@ exports[`rendering contact 1`] = `
           }
         >
           <span>
-            Last Name (required)
+            Last Name 
+            (required)
           </span>
           <input
             className={
@@ -87,7 +89,7 @@ exports[`rendering contact 1`] = `
           }
         >
           <span>
-            Email (required)
+            Email
           </span>
           <input
             className={
@@ -195,17 +197,25 @@ exports[`rendering location 1`] = `
           Search
         </button>
       </form>
-      <button
+      <div
         className={
           Object {
-            "data-css-1wppbi7": "",
+            "data-css-19e7ai6": "",
           }
         }
-        disabled={true}
-        onClick={[Function]}
       >
-        Next
-      </button>
+        <button
+          className={
+            Object {
+              "data-css-1wppbi7": "",
+            }
+          }
+          disabled={true}
+          onClick={[Function]}
+        >
+          Next
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -313,12 +323,14 @@ exports[`rendering questions 1`] = `
           </option>
         </select>
       </label>
-      <button
-        disabled={false}
-        onClick={[Function]}
-      >
-        Next
-      </button>
+      <div>
+        <button
+          disabled={true}
+          onClick={[Function]}
+        >
+          Next
+        </button>
+      </div>
     </div>
   </div>
 </div>
