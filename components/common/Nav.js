@@ -40,8 +40,8 @@ export default function Nav({ activeSection }: Props) {
         </li>
 
         { renderNavItem({ href: '/report', as: '/', title: 'Report a problem' }, activeSection === 'report')}
-        { renderNavItem({ href: '/services', as: null, title: 'All services' }, activeSection === 'services')}
         { renderNavItem({ href: '/search', as: null, title: 'Search cases' }, activeSection === 'search')}
+        { renderNavItem({ href: '/services', as: null, title: 'All services' }, activeSection === 'services')}
         { renderNavItem({ href: '/faq', as: null, title: 'FAQ' }, activeSection === 'faq')}
       </ul>
     </nav>
