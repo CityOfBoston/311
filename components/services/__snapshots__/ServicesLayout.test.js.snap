@@ -46,7 +46,7 @@ exports[`rendering 1`] = `
           href="/services"
           onClick={[Function]}
         >
-          See all services
+          All services
         </a>
       </li>
       <li
@@ -54,10 +54,10 @@ exports[`rendering 1`] = `
       >
         <a
           className="nv-s-l-a "
-          href="/lookup"
+          href="/search"
           onClick={[Function]}
         >
-          Case look up
+          Search cases
         </a>
       </li>
       <li

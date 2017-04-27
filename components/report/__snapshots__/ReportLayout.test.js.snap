@@ -44,7 +44,7 @@ exports[`existing service page rendering 1`] = `
           href="/services"
           onClick={[Function]}
         >
-          See all services
+          All services
         </a>
       </li>
       <li
@@ -52,10 +52,10 @@ exports[`existing service page rendering 1`] = `
       >
         <a
           className="nv-s-l-a "
-          href="/lookup"
+          href="/search"
           onClick={[Function]}
         >
-          Case look up
+          Search cases
         </a>
       </li>
       <li
@@ -425,7 +425,7 @@ exports[`existing service page rendering phone 1`] = `
           href="/services"
           onClick={[Function]}
         >
-          See all services
+          All services
         </a>
       </li>
       <li
@@ -433,10 +433,10 @@ exports[`existing service page rendering phone 1`] = `
       >
         <a
           className="nv-s-l-a "
-          href="/lookup"
+          href="/search"
           onClick={[Function]}
         >
-          Case look up
+          Search cases
         </a>
       </li>
       <li
@@ -806,7 +806,7 @@ exports[`existing service page rendering phone location step 1`] = `
           href="/services"
           onClick={[Function]}
         >
-          See all services
+          All services
         </a>
       </li>
       <li
@@ -814,10 +814,10 @@ exports[`existing service page rendering phone location step 1`] = `
       >
         <a
           className="nv-s-l-a "
-          href="/lookup"
+          href="/search"
           onClick={[Function]}
         >
-          Case look up
+          Search cases
         </a>
       </li>
       <li
@@ -983,7 +983,7 @@ exports[`missing service page rendering 1`] = `
           href="/services"
           onClick={[Function]}
         >
-          See all services
+          All services
         </a>
       </li>
       <li
@@ -991,10 +991,10 @@ exports[`missing service page rendering 1`] = `
       >
         <a
           className="nv-s-l-a "
-          href="/lookup"
+          href="/search"
           onClick={[Function]}
         >
-          Case look up
+          Search cases
         </a>
       </li>
       <li
@@ -1108,7 +1108,7 @@ exports[`report form rendering 1`] = `
           href="/services"
           onClick={[Function]}
         >
-          See all services
+          All services
         </a>
       </li>
       <li
@@ -1116,10 +1116,10 @@ exports[`report form rendering 1`] = `
       >
         <a
           className="nv-s-l-a "
-          href="/lookup"
+          href="/search"
           onClick={[Function]}
         >
-          Case look up
+          Search cases
         </a>
       </li>
       <li
