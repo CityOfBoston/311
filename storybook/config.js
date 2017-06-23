@@ -22,7 +22,12 @@ try {
   const DOT_ENV = require('../.env');
   env = parseDotEnv(DOT_ENV);
 } catch (e) {
-  env = process.env;
+  // the transform-inline-environment-variables babel plugin will insert
+  // these in
+  env = {
+    MAPBOX_ACCESS_TOKEN: process.env.MAPBOX_ACCESS_TOKEN,
+    MAPBOX_STYLE_PATH: process.env.MAPBOX_STYLE_PATH,
+  };
 }
 
 const headManager = new HeadManager();
