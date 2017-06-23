@@ -1,9 +1,13 @@
+/* eslint no-underscore-dangle: 0 */
+
 import React, { PropTypes } from 'react';
 import Head from 'next/head';
 import Router from 'next/router';
 import HeadManager from 'next/dist/client/head-manager';
-import { configure, addDecorator } from '@kadira/storybook';
+import { configure, addDecorator } from '@storybook/react';
+import inPercy from '@percy-io/in-percy';
 import svg4everybody from 'svg4everybody';
+import VelocityTransitionGroup from 'velocity-react/velocity-transition-group';
 
 // eslint-disable-next-line import/extensions
 import DOT_ENV from '../.env';
@@ -12,6 +16,10 @@ import parseDotEnv from '../lib/test/parse-dot-env';
 
 const dotEnv = parseDotEnv(DOT_ENV);
 const headManager = new HeadManager();
+
+if (inPercy()) {
+  VelocityTransitionGroup.disabledForTest = true;
+}
 
 class Wrapper extends React.Component {
   static childContextTypes = {
@@ -30,7 +38,7 @@ class Wrapper extends React.Component {
     return (
       <div>
         <Head>
-          { makeCss() }
+          { makeCss('', false) }
           <style type="text/css">{`
             body, html {
               background-color: #eee;
@@ -86,3 +94,5 @@ addDecorator((story) => {
 });
 
 configure(loadStories, module);
+
+if (typeof window === 'object') window.__storybook_stories__ = require('@storybook/react').getStorybook();
