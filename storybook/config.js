@@ -9,12 +9,22 @@ import inPercy from '@percy-io/in-percy';
 import svg4everybody from 'svg4everybody';
 import VelocityTransitionGroup from 'velocity-react/velocity-transition-group';
 
-// eslint-disable-next-line import/extensions
-import DOT_ENV from '../.env';
 import makeCss from '../lib/make-css';
 import parseDotEnv from '../lib/test/parse-dot-env';
 
-const dotEnv = parseDotEnv(DOT_ENV);
+let env;
+
+// There's no .env on Travis, but we want to run the storybook for Percy
+// snapshot testing. So, we guard the require with a try/catch and then
+// just set the MAPBOX env variables in the Travis UI.
+try {
+  // eslint-disable-next-line import/no-unresolved
+  const DOT_ENV = require('../.env');
+  env = parseDotEnv(DOT_ENV);
+} catch (e) {
+  env = process.env;
+}
+
 const headManager = new HeadManager();
 
 if (inPercy()) {
@@ -78,8 +88,8 @@ addDecorator((story) => {
 
   window.API_KEYS = {
     mapbox: {
-      accessToken: dotEnv.MAPBOX_ACCESS_TOKEN,
-      stylePath: dotEnv.MAPBOX_STYLE_PATH,
+      accessToken: env.MAPBOX_ACCESS_TOKEN,
+      stylePath: env.MAPBOX_STYLE_PATH,
     },
     cloudinary: {},
   };
