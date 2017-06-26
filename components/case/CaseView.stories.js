@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import inPercy from '@percy-io/in-percy';
 
 import { AppStore } from '../../data/store';
 import CaseView from './CaseView';
@@ -15,20 +16,20 @@ function makeStore() {
 
 storiesOf('CaseView', module)
   .addDecorator((next) => (
-    <div className="b-c" style={{ background: 'white' }}><div className="p-a500">{next()}</div></div>
+    <div className="b-c" style={{ background: 'white' }}>{next()}</div>
   ))
   .add('Submitted', () => (
     <div style={{ backgroundColor: 'white' }}>
-      <CaseView request={{ ...MOCK_REQUEST, status: 'open' }} store={makeStore()} submitted />
+      <CaseView request={{ ...MOCK_REQUEST, status: 'open' }} store={makeStore()} submitted noMap={inPercy()} />
     </div>
   ))
   .add('Open', () => (
     <div style={{ backgroundColor: 'white' }}>
-      <CaseView request={{ ...MOCK_REQUEST, status: 'open' }} store={makeStore()} />
+      <CaseView request={{ ...MOCK_REQUEST, status: 'open' }} store={makeStore()} noMap={inPercy()} />
     </div>
   ))
   .add('Resolved', () => (
     <div style={{ backgroundColor: 'white' }}>
-      <CaseView request={MOCK_REQUEST} store={makeStore()} />
+      <CaseView request={MOCK_REQUEST} store={makeStore()} noMap={inPercy()} />
     </div>
   ));
