@@ -399,18 +399,17 @@ anymatch@^1.3.0:
     arrify "^1.0.0"
     micromatch "^2.1.5"
 
-apollo-codegen@^0.12.8:
-  version "0.12.8"
-  resolved "https://registry.yarnpkg.com/apollo-codegen/-/apollo-codegen-0.12.8.tgz#92cd42f3b86edbc78f3975a26d20c532ca966f89"
+apollo-codegen@0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/apollo-codegen/-/apollo-codegen-0.13.0.tgz#eafceeef98e87f701a3cfcb08e03204f067a5aae"
   dependencies:
-    babel-polyfill "^6.23.0"
     change-case "^3.0.0"
+    core-js "^2.4.1"
     glob "^7.0.5"
     graphql "^0.10.0"
-    inflected "^1.1.7"
+    inflected "^2.0.2"
     mkdirp "^0.5.1"
     node-fetch "^1.5.3"
-    source-map-support "^0.4.2"
     yargs "^8.0.1"
 
 app-root-path@^2.0.0:
@@ -3937,7 +3936,7 @@ glob2base@^0.0.12:
   dependencies:
     find-index "^0.1.1"
 
-glob@7.1.1, glob@^7.0.0, glob@^7.0.3, glob@^7.0.5:
+glob@7.1.1, glob@^7.0.0, glob@^7.0.3:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
   dependencies:
@@ -3967,7 +3966,7 @@ glob@^6.0.1:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.1.1, glob@^7.1.2:
+glob@^7.0.5, glob@^7.1.1, glob@^7.1.2:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
   dependencies:
@@ -4615,9 +4614,9 @@ inert@^4.2.0:
     joi "10.x.x"
     lru-cache "4.0.x"
 
-inflected@^1.1.7:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/inflected/-/inflected-1.1.7.tgz#c393df6e28472d0d77b3082ec3aa2091f4bc96f9"
+inflected@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/inflected/-/inflected-2.0.2.tgz#1bc31ac427ca5321b2a16cc56d6ff29fcd2ff80c"
 
 inflight@^1.0.4:
   version "1.0.6"
