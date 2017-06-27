@@ -196,7 +196,7 @@ export default class LocationPopUp extends React.Component {
             <div className="sf-i">
               <input
                 className="sf-i-f"
-                onInput={this.whenSearchInput}
+                onChange={this.whenSearchInput}
                 value={this.addressQuery}
                 ref={this.setSearchField}
                 aria-label="Address search field"
@@ -249,7 +249,7 @@ export default class LocationPopUp extends React.Component {
                     id="unit-menu"
                     className="sel-f"
                     value={mapLocation.addressId || ''}
-                    onInput={this.whenUnitChange}>
+                    onChange={this.whenUnitChange}>
                     {units.map(({ addressId, unit, streetAddress }) =>
                       <option value={addressId} key={addressId}>
                         {unit ? `   ${unit}` : streetAddress}

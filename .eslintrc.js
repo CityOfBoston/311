@@ -27,6 +27,8 @@ module.exports = {
     "jsx-a11y/anchor-is-valid": 0,
     // Seems broken in v6.0.0
     "jsx-a11y/label-has-for": 0,
+    // IE9+10 don't have the value set when onInput fires
+    "jsx-a11y/no-onchange": 0,
     "prettier/prettier": ["error", {
       "singleQuote": true,
       "trailingComma": "all",
