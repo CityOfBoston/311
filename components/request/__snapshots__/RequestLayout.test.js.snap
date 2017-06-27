@@ -20,7 +20,6 @@ exports[`existing service page rendering phone 1`] = `
         <label
           className="nv-s-l-b"
           htmlFor="nv-s-tr"
-          type="button"
         >
           Navigation
         </label>
@@ -428,7 +427,6 @@ exports[`existing service page rendering phone location step 1`] = `
         <label
           className="nv-s-l-b"
           htmlFor="nv-s-tr"
-          type="button"
         >
           Navigation
         </label>
@@ -531,7 +529,7 @@ exports[`existing service page rendering phone location step 1`] = `
                 <input
                   aria-label="Address search field"
                   className="sf-i-f"
-                  onChange={[Function]}
+                  onInput={[Function]}
                   placeholder="Search for a street address or intersection…"
                   type="text"
                   value=""
@@ -606,7 +604,6 @@ exports[`missing service page rendering 1`] = `
         <label
           className="nv-s-l-b"
           htmlFor="nv-s-tr"
-          type="button"
         >
           Navigation
         </label>

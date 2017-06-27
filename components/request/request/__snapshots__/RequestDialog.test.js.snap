@@ -423,7 +423,7 @@ exports[`rendering location 1`] = `
             <input
               aria-label="Address search field"
               className="sf-i-f"
-              onChange={[Function]}
+              onInput={[Function]}
               placeholder="Search for a street address or intersection…"
               type="text"
               value=""
