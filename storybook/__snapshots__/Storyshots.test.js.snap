@@ -6752,7 +6752,7 @@ exports[`Storyshots LocationPopUp with address 1`] = `
                         Object {
                           "__html": "
     <svg role=\\"img\\" class=\\"css-uwwqev\\">
-      <use xlink:href=\\"/assets/img/svg/waypoints.svg#orange-filled\\" height=\\"100%\\" />
+      <use xlink:href=\\"/assets/img/svg/waypoints.svg#green-filled\\" height=\\"100%\\" />
     </svg>
   ",
                         }
@@ -6888,7 +6888,7 @@ exports[`Storyshots LocationPopUp with inexact address 1`] = `
                         Object {
                           "__html": "
     <svg role=\\"img\\" class=\\"css-uwwqev\\">
-      <use xlink:href=\\"/assets/img/svg/waypoints.svg#orange-filled\\" height=\\"100%\\" />
+      <use xlink:href=\\"/assets/img/svg/waypoints.svg#green-filled\\" height=\\"100%\\" />
     </svg>
   ",
                         }
@@ -7036,7 +7036,7 @@ exports[`Storyshots LocationPopUp with multiple addresses 1`] = `
                         Object {
                           "__html": "
     <svg role=\\"img\\" class=\\"css-uwwqev\\">
-      <use xlink:href=\\"/assets/img/svg/waypoints.svg#orange-filled\\" height=\\"100%\\" />
+      <use xlink:href=\\"/assets/img/svg/waypoints.svg#green-filled\\" height=\\"100%\\" />
     </svg>
   ",
                         }
@@ -7358,7 +7358,7 @@ exports[`Storyshots LocationPopUp with multiple addresses and units 1`] = `
                         Object {
                           "__html": "
     <svg role=\\"img\\" class=\\"css-uwwqev\\">
-      <use xlink:href=\\"/assets/img/svg/waypoints.svg#orange-filled\\" height=\\"100%\\" />
+      <use xlink:href=\\"/assets/img/svg/waypoints.svg#green-filled\\" height=\\"100%\\" />
     </svg>
   ",
                         }
@@ -7739,7 +7739,7 @@ exports[`Storyshots LocationPopUp with units 1`] = `
                         Object {
                           "__html": "
     <svg role=\\"img\\" class=\\"css-uwwqev\\">
-      <use xlink:href=\\"/assets/img/svg/waypoints.svg#orange-filled\\" height=\\"100%\\" />
+      <use xlink:href=\\"/assets/img/svg/waypoints.svg#green-filled\\" height=\\"100%\\" />
     </svg>
   ",
                         }
