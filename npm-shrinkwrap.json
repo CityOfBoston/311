@@ -2688,13 +2688,26 @@
       }
     },
     "babel-jest": {
-      "version": "21.2.0",
-      "resolved": "https://registry.npmjs.org/babel-jest/-/babel-jest-21.2.0.tgz",
-      "integrity": "sha512-O0W2qLoWu1QOoOGgxiR2JID4O6WSpxPiQanrkyi9SSlM0PJ60Ptzlck47lhtnr9YZO3zYOsxHwnyeWJ6AffoBQ==",
+      "version": "22.0.0",
+      "resolved": "https://registry.npmjs.org/babel-jest/-/babel-jest-22.0.0.tgz",
+      "integrity": "sha512-uM7PQcQnjnJlKNP1JnYTRuqDbFhrY92dfNoTuzcgYZnLsdGZ//TtIHLpzBDG8UTa5xkKSkmWGOZr45pqOyreRg==",
       "dev": true,
       "requires": {
-        "babel-plugin-istanbul": "4.1.4",
-        "babel-preset-jest": "21.2.0"
+        "babel-plugin-istanbul": "4.1.5",
+        "babel-preset-jest": "22.0.0"
+      },
+      "dependencies": {
+        "babel-plugin-istanbul": {
+          "version": "4.1.5",
+          "resolved": "https://registry.npmjs.org/babel-plugin-istanbul/-/babel-plugin-istanbul-4.1.5.tgz",
+          "integrity": "sha1-Z2DN2Xf0EdPhdbsGTyvDJ9mbK24=",
+          "dev": true,
+          "requires": {
+            "find-up": "2.1.0",
+            "istanbul-lib-instrument": "1.7.5",
+            "test-exclude": "4.1.1"
+          }
+        }
       }
     },
     "babel-loader": {
@@ -2855,9 +2868,9 @@
       }
     },
     "babel-plugin-jest-hoist": {
-      "version": "21.2.0",
-      "resolved": "https://registry.npmjs.org/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-21.2.0.tgz",
-      "integrity": "sha512-yi5QuiVyyvhBUDLP4ButAnhYzkdrUwWDtvUJv71hjH3fclhnZg4HkDeqaitcR2dZZx/E67kGkRcPVjtVu+SJfQ==",
+      "version": "22.0.0",
+      "resolved": "https://registry.npmjs.org/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-22.0.0.tgz",
+      "integrity": "sha512-eyge/WyfBs2ztsywfksVC+6ag76aGAf7+dDQzKQLPRqTdlDvHEzO+UCMp/motiGu4MIINy0247bwdmxZtH8C8w==",
       "dev": true
     },
     "babel-plugin-minify-builtins": {
@@ -3653,12 +3666,12 @@
       }
     },
     "babel-preset-jest": {
-      "version": "21.2.0",
-      "resolved": "https://registry.npmjs.org/babel-preset-jest/-/babel-preset-jest-21.2.0.tgz",
-      "integrity": "sha512-hm9cBnr2h3J7yXoTtAVV0zg+3vg0Q/gT2GYuzlreTU0EPkJRtlNgKJJ3tBKEn0+VjAi3JykV6xCJkuUYttEEfA==",
+      "version": "22.0.0",
+      "resolved": "https://registry.npmjs.org/babel-preset-jest/-/babel-preset-jest-22.0.0.tgz",
+      "integrity": "sha512-k4RfjTU6iurpbOpjV1wMaCcIezVHp4snbpTH6rz6VMsZEHjDu4r0vp22dE4kF29DMLJ7yCaCdBrBfjClmQfirQ==",
       "dev": true,
       "requires": {
-        "babel-plugin-jest-hoist": "21.2.0",
+        "babel-plugin-jest-hoist": "22.0.0",
         "babel-plugin-syntax-object-rest-spread": "6.13.0"
       }
     },
