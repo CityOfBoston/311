@@ -219,10 +219,28 @@
       "integrity": "sha1-6pn2EhtKjwZbTHH4VZXbJxRJiAc=",
       "dev": true
     },
+    "@mapbox/geojson-area": {
+      "version": "0.2.2",
+      "resolved": "https://registry.npmjs.org/@mapbox/geojson-area/-/geojson-area-0.2.2.tgz",
+      "integrity": "sha1-GNeBSqNr8j+7zDefjiaiKSfevxA=",
+      "requires": {
+        "wgs84": "0.0.0"
+      }
+    },
     "@mapbox/gl-matrix": {
       "version": "0.0.1",
       "resolved": "https://registry.npmjs.org/@mapbox/gl-matrix/-/gl-matrix-0.0.1.tgz",
       "integrity": "sha1-5RJqq01kw2uBx6l9CuDd3eV3PSs="
+    },
+    "@mapbox/mapbox-gl-supported": {
+      "version": "1.3.0",
+      "resolved": "https://registry.npmjs.org/@mapbox/mapbox-gl-supported/-/mapbox-gl-supported-1.3.0.tgz",
+      "integrity": "sha512-ACfuqIMxAzIoKRp3e7J2VjTJFBbrOoXqt4b7vy1x5uz5Od5Drroe2Ei/+R416eKpTXE1L0zHq5D2m3Q+SyM9WQ=="
+    },
+    "@mapbox/point-geometry": {
+      "version": "0.1.0",
+      "resolved": "https://registry.npmjs.org/@mapbox/point-geometry/-/point-geometry-0.1.0.tgz",
+      "integrity": "sha1-ioP5M1x4YO/6Lu7KJUMyqgru2PI="
     },
     "@mapbox/shelf-pack": {
       "version": "3.1.0",
@@ -238,6 +256,14 @@
       "version": "0.0.0",
       "resolved": "https://registry.npmjs.org/@mapbox/unitbezier/-/unitbezier-0.0.0.tgz",
       "integrity": "sha1-FWUb1VOme4WB+zmIEMmK2Go0Uk4="
+    },
+    "@mapbox/vector-tile": {
+      "version": "1.3.0",
+      "resolved": "https://registry.npmjs.org/@mapbox/vector-tile/-/vector-tile-1.3.0.tgz",
+      "integrity": "sha1-xJX5clJb78zvzYOPRf+jfvO3D+g=",
+      "requires": {
+        "@mapbox/point-geometry": "0.1.0"
+      }
     },
     "@mapbox/whoots-js": {
       "version": "3.0.0",
@@ -4126,22 +4152,6 @@
         }
       }
     },
-    "bops": {
-      "version": "0.0.6",
-      "resolved": "https://registry.npmjs.org/bops/-/bops-0.0.6.tgz",
-      "integrity": "sha1-CC0dVfoB5g29wuvC26N/ZZVUzzo=",
-      "requires": {
-        "base64-js": "0.0.2",
-        "to-utf8": "0.0.1"
-      },
-      "dependencies": {
-        "base64-js": {
-          "version": "0.0.2",
-          "resolved": "https://registry.npmjs.org/base64-js/-/base64-js-0.0.2.tgz",
-          "integrity": "sha1-Ak8Pcq+iW3X5wO5zzU9V7Bvtl4Q="
-        }
-      }
-    },
     "bowser": {
       "version": "1.7.2",
       "resolved": "https://registry.npmjs.org/bowser/-/bowser-1.7.2.tgz",
@@ -5992,9 +6002,9 @@
       }
     },
     "earcut": {
-      "version": "2.1.1",
-      "resolved": "https://registry.npmjs.org/earcut/-/earcut-2.1.1.tgz",
-      "integrity": "sha1-FXY05fPrtCIk5HUBboalts5Va0U="
+      "version": "2.1.2",
+      "resolved": "https://registry.npmjs.org/earcut/-/earcut-2.1.2.tgz",
+      "integrity": "sha512-ji2b8qOVwK4WChYTbpKo983518wEqY2wrpkd85Us/LLw+3O7G0jGvGbHgQERuovrv3Cop9cEpiNkhqVQSkgTtA=="
     },
     "ecc-jsbn": {
       "version": "0.1.1",
@@ -7040,6 +7050,14 @@
       "resolved": "https://registry.npmjs.org/extend/-/extend-3.0.1.tgz",
       "integrity": "sha1-p1Xqe8Gt/MWjHOfnYtuq3F5jZEQ="
     },
+    "extend-shallow": {
+      "version": "2.0.1",
+      "resolved": "https://registry.npmjs.org/extend-shallow/-/extend-shallow-2.0.1.tgz",
+      "integrity": "sha1-Ua99YUrZqfYQ6huvu5idaxxWiQ8=",
+      "requires": {
+        "is-extendable": "0.1.1"
+      }
+    },
     "external-editor": {
       "version": "2.0.4",
       "resolved": "https://registry.npmjs.org/external-editor/-/external-editor-2.0.4.tgz",
@@ -7168,11 +7186,6 @@
       "version": "1.1.13",
       "resolved": "https://registry.npmjs.org/fast-safe-stringify/-/fast-safe-stringify-1.1.13.tgz",
       "integrity": "sha1-oB6c2cnkkXFcmKdaQtXwu9EH/3Y="
-    },
-    "fast-stable-stringify": {
-      "version": "0.1.1",
-      "resolved": "https://registry.npmjs.org/fast-stable-stringify/-/fast-stable-stringify-0.1.1.tgz",
-      "integrity": "sha1-znWNzhy0D7K/DIrvT5PnktGVtJE="
     },
     "fastparse": {
       "version": "1.1.1",
@@ -7442,12 +7455,12 @@
       "dev": true
     },
     "flow-remove-types": {
-      "version": "1.2.1",
-      "resolved": "https://registry.npmjs.org/flow-remove-types/-/flow-remove-types-1.2.1.tgz",
-      "integrity": "sha1-WOJhv4uEK9I0yGyvuYKhITr/Dts=",
+      "version": "1.2.3",
+      "resolved": "https://registry.npmjs.org/flow-remove-types/-/flow-remove-types-1.2.3.tgz",
+      "integrity": "sha512-ypq/U3V+t9atYiOuSJd40tekCra03EHKoRsiK/wXGrsZimuum0kdwVY7Yv0HTaoXgHW1WiayomYd+Q3kkvPl9Q==",
       "requires": {
         "babylon": "6.18.0",
-        "vlq": "0.2.2"
+        "vlq": "0.2.3"
       }
     },
     "follow-redirects": {
@@ -8396,43 +8409,27 @@
         "is-property": "1.0.2"
       }
     },
-    "geojson-area": {
-      "version": "0.1.0",
-      "resolved": "https://registry.npmjs.org/geojson-area/-/geojson-area-0.1.0.tgz",
-      "integrity": "sha1-1I2AcILPrfSnjfE0m+UPOL8YlK4=",
-      "requires": {
-        "wgs84": "0.0.0"
-      }
-    },
     "geojson-rewind": {
-      "version": "0.1.0",
-      "resolved": "https://registry.npmjs.org/geojson-rewind/-/geojson-rewind-0.1.0.tgz",
-      "integrity": "sha1-VwIqBUsZZmDXVTVP5dJmhNkM0Bk=",
+      "version": "0.3.0",
+      "resolved": "https://registry.npmjs.org/geojson-rewind/-/geojson-rewind-0.3.0.tgz",
+      "integrity": "sha512-5dsjiZGk6p///Ju9kh7uGW+I74CZriHsxqBNPbIN4bbInfKmHwwM+f8fZ42fmpV5emeUYLTTC+GWs3EC1TMjNQ==",
       "requires": {
-        "concat-stream": "1.2.1",
-        "geojson-area": "0.1.0",
-        "minimist": "0.0.5"
+        "@mapbox/geojson-area": "0.2.2",
+        "concat-stream": "1.6.0",
+        "minimist": "1.2.0"
       },
       "dependencies": {
-        "concat-stream": {
-          "version": "1.2.1",
-          "resolved": "https://registry.npmjs.org/concat-stream/-/concat-stream-1.2.1.tgz",
-          "integrity": "sha1-81EAtsRjeL+6i2uA+fDQzN8T3GA=",
-          "requires": {
-            "bops": "0.0.6"
-          }
-        },
         "minimist": {
-          "version": "0.0.5",
-          "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.5.tgz",
-          "integrity": "sha1-16oye87PUY+RBqxrjwA/o7zqhWY="
+          "version": "1.2.0",
+          "resolved": "https://registry.npmjs.org/minimist/-/minimist-1.2.0.tgz",
+          "integrity": "sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ="
         }
       }
     },
     "geojson-vt": {
-      "version": "2.4.0",
-      "resolved": "https://registry.npmjs.org/geojson-vt/-/geojson-vt-2.4.0.tgz",
-      "integrity": "sha1-PBz0RJPzXrTSxwyV2mVQ3mYHLAU="
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/geojson-vt/-/geojson-vt-3.0.0.tgz",
+      "integrity": "sha512-FL7VV56gYBDBh0F7EWyZV5G9/L2EHEHh9SyhEpJz4c8YDPerM6dnP9VbRcsbyg1wH+1oyoHRA9dlJkGs/IXULA=="
     },
     "get-caller-file": {
       "version": "1.0.2",
@@ -9016,6 +9013,38 @@
           "version": "3.1.0",
           "resolved": "https://registry.npmjs.org/uuid/-/uuid-3.1.0.tgz",
           "integrity": "sha512-DIWtzUkw04M4k3bf1IcpS2tngXEL26YUD2M0tMDUpnUrz2hgzUBlD55a4FjdLGPvfHxS6uluGWvaVEqgBcVa+g=="
+        }
+      }
+    },
+    "gray-matter": {
+      "version": "3.1.1",
+      "resolved": "https://registry.npmjs.org/gray-matter/-/gray-matter-3.1.1.tgz",
+      "integrity": "sha512-nZ1qjLmayEv0/wt3sHig7I0s3/sJO0dkAaKYQ5YAOApUtYEOonXSFdWvL1khvnZMTvov4UufkqlFsilPnejEXA==",
+      "requires": {
+        "extend-shallow": "2.0.1",
+        "js-yaml": "3.10.0",
+        "kind-of": "5.1.0",
+        "strip-bom-string": "1.0.0"
+      },
+      "dependencies": {
+        "esprima": {
+          "version": "4.0.0",
+          "resolved": "https://registry.npmjs.org/esprima/-/esprima-4.0.0.tgz",
+          "integrity": "sha512-oftTcaMu/EGrEIu904mWteKIv8vMuOgGYo7EhVJJN00R/EED9DCua/xxHRdYnKtcECzVg7xOWhflvJMnqcFZjw=="
+        },
+        "js-yaml": {
+          "version": "3.10.0",
+          "resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.10.0.tgz",
+          "integrity": "sha512-O2v52ffjLa9VeM43J4XocZE//WT9N0IiwDa3KSHH7Tu8CtH+1qM8SIZvnsTh6v+4yFy5KUY3BHUVwjpfAWsjIA==",
+          "requires": {
+            "argparse": "1.0.9",
+            "esprima": "4.0.0"
+          }
+        },
+        "kind-of": {
+          "version": "5.1.0",
+          "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-5.1.0.tgz",
+          "integrity": "sha512-NGEErnH6F2vUuXDh+OlbcKW7/wOcfdRHaZ7VWtqCztfHri/++YKmP51OdWeGPuqCOba6kk2OTe5d02VmTB80Pw=="
         }
       }
     },
@@ -12693,7 +12722,7 @@
       "resolved": "https://registry.npmjs.org/magic-string/-/magic-string-0.14.0.tgz",
       "integrity": "sha1-VyJK7xcByu7Sc7F6OalW5ysXJGI=",
       "requires": {
-        "vlq": "0.2.2"
+        "vlq": "0.2.3"
       }
     },
     "make-dir": {
@@ -12772,41 +12801,42 @@
       "integrity": "sha1-2TPOuSBdgr3PSIb2dCvcK03qFG0="
     },
     "mapbox-gl": {
-      "version": "0.39.1",
-      "resolved": "https://registry.npmjs.org/mapbox-gl/-/mapbox-gl-0.39.1.tgz",
-      "integrity": "sha512-twpqq39xs93VQnKjntIaSndnFc0wV6GReOiIDAbXyuyhYnHZFz11vX3F/vmY1f07ZUOJtBwOzazhZrrwya1p1A==",
+      "version": "0.43.0",
+      "resolved": "https://registry.npmjs.org/mapbox-gl/-/mapbox-gl-0.43.0.tgz",
+      "integrity": "sha512-mSyGdXEy+JXXZS5/U4IL13JnOeHx8IoyrNPalxQnagFf3X8olaqKBy49YyEIBeAxTBR4QDeS50fwDLJK1C2Hgg==",
       "requires": {
         "@mapbox/gl-matrix": "0.0.1",
+        "@mapbox/mapbox-gl-supported": "1.3.0",
+        "@mapbox/point-geometry": "0.1.0",
         "@mapbox/shelf-pack": "3.1.0",
         "@mapbox/tiny-sdf": "1.1.0",
         "@mapbox/unitbezier": "0.0.0",
+        "@mapbox/vector-tile": "1.3.0",
         "@mapbox/whoots-js": "3.0.0",
         "brfs": "1.4.3",
         "bubleify": "0.7.0",
         "csscolorparser": "1.0.3",
-        "earcut": "2.1.1",
-        "fast-stable-stringify": "0.1.1",
-        "geojson-rewind": "0.1.0",
-        "geojson-vt": "2.4.0",
+        "earcut": "2.1.2",
+        "geojson-rewind": "0.3.0",
+        "geojson-vt": "3.0.0",
+        "gray-matter": "3.1.1",
         "grid-index": "1.0.0",
         "jsonlint-lines-primitives": "1.6.0",
         "lodash.isequal": "3.0.4",
-        "mapbox-gl-supported": "1.2.0",
         "minimist": "0.0.8",
         "package-json-versionify": "1.0.4",
-        "pbf": "1.3.7",
-        "point-geometry": "0.0.0",
-        "quickselect": "1.0.0",
+        "pbf": "3.1.0",
+        "quickselect": "1.0.1",
         "rw": "1.3.3",
+        "shuffle-seed": "1.1.6",
         "sort-object": "0.3.2",
         "supercluster": "2.3.0",
         "through2": "2.0.3",
-        "tinyqueue": "1.2.2",
-        "unassertify": "2.0.4",
+        "tinyqueue": "1.2.3",
+        "unassertify": "2.1.0",
         "unflowify": "1.0.1",
-        "vector-tile": "1.3.0",
-        "vt-pbf": "2.1.4",
-        "webworkify": "1.4.0"
+        "vt-pbf": "3.1.0",
+        "webworkify": "1.5.0"
       }
     },
     "mapbox-gl-supported": {
@@ -14559,9 +14589,9 @@
       }
     },
     "pbf": {
-      "version": "1.3.7",
-      "resolved": "https://registry.npmjs.org/pbf/-/pbf-1.3.7.tgz",
-      "integrity": "sha1-Hj0Ee6PL6Ahq6FSiVQOrRTfUM10=",
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/pbf/-/pbf-3.1.0.tgz",
+      "integrity": "sha512-/hYJmIsTmh7fMkHAWWXJ5b8IKLWdjdlAFb3IHkRBn1XUhIYBChVGfVwmHEAV3UfXTxsP/AKfYTXTS/dCPxJd5w==",
       "requires": {
         "ieee754": "1.1.8",
         "resolve-protobuf-schema": "2.0.0"
@@ -14749,11 +14779,6 @@
         "items": "2.1.1",
         "joi": "10.6.0"
       }
-    },
-    "point-geometry": {
-      "version": "0.0.0",
-      "resolved": "https://registry.npmjs.org/point-geometry/-/point-geometry-0.0.0.tgz",
-      "integrity": "sha1-b8vK16gDtkGCR91uScKFPFhNr/c="
     },
     "postcss": {
       "version": "6.0.13",
@@ -16214,9 +16239,9 @@
       "integrity": "sha1-nsYfeQSYdXB9aUFFlv2Qek1xHnM="
     },
     "quickselect": {
-      "version": "1.0.0",
-      "resolved": "https://registry.npmjs.org/quickselect/-/quickselect-1.0.0.tgz",
-      "integrity": "sha1-AmMIGPmq5OyrJvAQP5jQYcF8WPM="
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/quickselect/-/quickselect-1.0.1.tgz",
+      "integrity": "sha512-Jt30UQSzTbxf6L2bFTMabHtGtYUzQcvOY0a+s5brm8tzndV/XWifBIH9v5QKtH5gGCZ5RRDwRhdhGMDVHAEGNQ=="
     },
     "quote-stream": {
       "version": "1.0.2",
@@ -17329,6 +17354,11 @@
         "ajv": "5.2.2"
       }
     },
+    "seedrandom": {
+      "version": "2.4.3",
+      "resolved": "https://registry.npmjs.org/seedrandom/-/seedrandom-2.4.3.tgz",
+      "integrity": "sha1-JDhQTa0zkXMUv/GKxNeU8W1qrsw="
+    },
     "semantic-release": {
       "version": "8.2.0",
       "resolved": "https://registry.npmjs.org/semantic-release/-/semantic-release-8.2.0.tgz",
@@ -17570,6 +17600,14 @@
       "requires": {
         "hoek": "4.2.0",
         "joi": "10.6.0"
+      }
+    },
+    "shuffle-seed": {
+      "version": "1.1.6",
+      "resolved": "https://registry.npmjs.org/shuffle-seed/-/shuffle-seed-1.1.6.tgz",
+      "integrity": "sha1-UzwSaDurO0+j6HUfxOViFGdEJgs=",
+      "requires": {
+        "seedrandom": "2.4.3"
       }
     },
     "sigmund": {
@@ -18078,6 +18116,11 @@
       "requires": {
         "is-utf8": "0.2.1"
       }
+    },
+    "strip-bom-string": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/strip-bom-string/-/strip-bom-string-1.0.0.tgz",
+      "integrity": "sha1-5SEekiQ2n7uB1jOi8ABE3IztrZI="
     },
     "strip-eof": {
       "version": "1.0.0",
@@ -18654,9 +18697,9 @@
       }
     },
     "tinyqueue": {
-      "version": "1.2.2",
-      "resolved": "https://registry.npmjs.org/tinyqueue/-/tinyqueue-1.2.2.tgz",
-      "integrity": "sha1-lHIp5eQZerqYis0ndR3MWC5nKP8="
+      "version": "1.2.3",
+      "resolved": "https://registry.npmjs.org/tinyqueue/-/tinyqueue-1.2.3.tgz",
+      "integrity": "sha512-Qz9RgWuO9l8lT+Y9xvbzhPT2efIUIFd69N7eF7tJ9lnQl0iLj1M7peK7IoUGZL9DJHw9XftqLreccfxcQgYLxA=="
     },
     "title-case": {
       "version": "2.1.1",
@@ -18700,11 +18743,6 @@
       "requires": {
         "is-nil": "1.0.1"
       }
-    },
-    "to-utf8": {
-      "version": "0.0.1",
-      "resolved": "https://registry.npmjs.org/to-utf8/-/to-utf8-0.0.1.tgz",
-      "integrity": "sha1-0Xrqcv8vujm55DYBvns/9y4ImFI="
     },
     "topo": {
       "version": "2.0.2",
@@ -19056,44 +19094,39 @@
       }
     },
     "unassertify": {
-      "version": "2.0.4",
-      "resolved": "https://registry.npmjs.org/unassertify/-/unassertify-2.0.4.tgz",
-      "integrity": "sha1-s8orpfKbSDbjWm3Xflsg9tu/jlI=",
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/unassertify/-/unassertify-2.1.0.tgz",
+      "integrity": "sha512-CB3C3vbOwrZydRuGdU8H421r4/qhM8RLuEOo3G+wEFf7kDP4TR+7oDuj1yOik5pUzXMaJmzxICM7akupP1AlJw==",
       "requires": {
-        "acorn": "4.0.13",
+        "acorn": "5.1.1",
         "convert-source-map": "1.5.0",
-        "escodegen": "1.8.1",
+        "escodegen": "1.9.0",
         "multi-stage-sourcemap": "0.2.1",
         "through": "2.3.8",
         "unassert": "1.5.1"
       },
       "dependencies": {
-        "acorn": {
-          "version": "4.0.13",
-          "resolved": "https://registry.npmjs.org/acorn/-/acorn-4.0.13.tgz",
-          "integrity": "sha1-EFSVrlNh1pe9GVyCUZLhrX8lN4c="
-        },
         "escodegen": {
-          "version": "1.8.1",
-          "resolved": "https://registry.npmjs.org/escodegen/-/escodegen-1.8.1.tgz",
-          "integrity": "sha1-WltTr0aTEQvrsIZ6o0MN07cKEBg=",
+          "version": "1.9.0",
+          "resolved": "https://registry.npmjs.org/escodegen/-/escodegen-1.9.0.tgz",
+          "integrity": "sha512-v0MYvNQ32bzwoG2OSFzWAkuahDQHK92JBN0pTAALJ4RIxEZe766QJPDR8Hqy7XNUy5K3fnVL76OqYAdc4TZEIw==",
           "requires": {
-            "esprima": "2.7.3",
-            "estraverse": "1.9.3",
+            "esprima": "3.1.3",
+            "estraverse": "4.2.0",
             "esutils": "2.0.2",
             "optionator": "0.8.2",
-            "source-map": "0.2.0"
+            "source-map": "0.5.7"
           }
         },
         "esprima": {
-          "version": "2.7.3",
-          "resolved": "https://registry.npmjs.org/esprima/-/esprima-2.7.3.tgz",
-          "integrity": "sha1-luO3DVd59q1JzQMmc9HDEnZ7pYE="
+          "version": "3.1.3",
+          "resolved": "https://registry.npmjs.org/esprima/-/esprima-3.1.3.tgz",
+          "integrity": "sha1-/cpRzuYTOJXjyI1TXOSdv/YqRjM="
         },
         "estraverse": {
-          "version": "1.9.3",
-          "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-1.9.3.tgz",
-          "integrity": "sha1-r2fy3JIlgkFZUJJgkaQAXSnJu0Q="
+          "version": "4.2.0",
+          "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-4.2.0.tgz",
+          "integrity": "sha1-De4/7TH81GlhjOc0IJn8GvoL2xM="
         },
         "esutils": {
           "version": "2.0.2",
@@ -19101,13 +19134,10 @@
           "integrity": "sha1-Cr9PHKpbyx96nYrMbepPqqBLrJs="
         },
         "source-map": {
-          "version": "0.2.0",
-          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.2.0.tgz",
-          "integrity": "sha1-2rc/vPwrqBm03gO9b26qSBZLP50=",
-          "optional": true,
-          "requires": {
-            "amdefine": "1.0.1"
-          }
+          "version": "0.5.7",
+          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz",
+          "integrity": "sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=",
+          "optional": true
         }
       }
     },
@@ -19137,7 +19167,7 @@
       "resolved": "https://registry.npmjs.org/unflowify/-/unflowify-1.0.1.tgz",
       "integrity": "sha1-ouoNJcCv/MRpVeZHNXX3xaH0ppY=",
       "requires": {
-        "flow-remove-types": "1.2.1",
+        "flow-remove-types": "1.2.3",
         "through": "2.3.8"
       }
     },
@@ -19359,14 +19389,6 @@
       "resolved": "https://registry.npmjs.org/vary/-/vary-1.1.1.tgz",
       "integrity": "sha1-Z1Neu2lMHVIldFeYRmUyP1h+jTc="
     },
-    "vector-tile": {
-      "version": "1.3.0",
-      "resolved": "https://registry.npmjs.org/vector-tile/-/vector-tile-1.3.0.tgz",
-      "integrity": "sha1-BtUWqDsGPwTILvU5zxuxrr62lrQ=",
-      "requires": {
-        "point-geometry": "0.0.0"
-      }
-    },
     "velocity-animate": {
       "version": "1.5.0",
       "resolved": "https://registry.npmjs.org/velocity-animate/-/velocity-animate-1.5.0.tgz",
@@ -19537,9 +19559,9 @@
       }
     },
     "vlq": {
-      "version": "0.2.2",
-      "resolved": "https://registry.npmjs.org/vlq/-/vlq-0.2.2.tgz",
-      "integrity": "sha1-4xbVJXtAuGu0PLjV/qXX9U1rDKE="
+      "version": "0.2.3",
+      "resolved": "https://registry.npmjs.org/vlq/-/vlq-0.2.3.tgz",
+      "integrity": "sha512-DRibZL6DsNhIgYQ+wNdWDL2SL3bKPlVrRiBqV5yuMm++op8W4kGFtaQfCs4KEJn0wBZcHVHJ3eoywX8983k1ow=="
     },
     "vm-browserify": {
       "version": "0.0.4",
@@ -19550,13 +19572,13 @@
       }
     },
     "vt-pbf": {
-      "version": "2.1.4",
-      "resolved": "https://registry.npmjs.org/vt-pbf/-/vt-pbf-2.1.4.tgz",
-      "integrity": "sha1-td98P5cGFW4LmIGpncsFY1dAtSI=",
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/vt-pbf/-/vt-pbf-3.1.0.tgz",
+      "integrity": "sha512-UUCGPkpT1P/bm3R3/HX0SCnRSto44xXx0WuLFVG6C7KspdfQfU+84etoO6cITAGCdq8V5DjuWfDhvk/pyTyt3Q==",
       "requires": {
-        "pbf": "1.3.7",
-        "point-geometry": "0.0.0",
-        "vector-tile": "1.3.0"
+        "@mapbox/point-geometry": "0.1.0",
+        "@mapbox/vector-tile": "1.3.0",
+        "pbf": "3.1.0"
       }
     },
     "walk": {
@@ -19738,9 +19760,9 @@
       }
     },
     "webworkify": {
-      "version": "1.4.0",
-      "resolved": "https://registry.npmjs.org/webworkify/-/webworkify-1.4.0.tgz",
-      "integrity": "sha1-cSRdHjTKz1TkJr2VX4zG7hLQJMI="
+      "version": "1.5.0",
+      "resolved": "https://registry.npmjs.org/webworkify/-/webworkify-1.5.0.tgz",
+      "integrity": "sha512-AMcUeyXAhbACL8S2hqqdqOLqvJ8ylmIbNwUIqQujRSouf4+eUFaXbG6F1Rbu+srlJMmxQWsiU7mOJi0nMBfM1g=="
     },
     "wgs84": {
       "version": "0.0.0",
