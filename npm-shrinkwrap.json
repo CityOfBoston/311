@@ -7109,9 +7109,9 @@
       "dev": true
     },
     "fake-xml-http-request": {
-      "version": "1.6.0",
-      "resolved": "https://registry.npmjs.org/fake-xml-http-request/-/fake-xml-http-request-1.6.0.tgz",
-      "integrity": "sha512-99XPwwSg89BfzPuv4XCpZxn3EbauMCgAQCxq9MzrvS6DFD73OON6AnUTicL4A0HZtYMBwCZBWVnRqGjZDgQkTg==",
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/fake-xml-http-request/-/fake-xml-http-request-2.0.0.tgz",
+      "integrity": "sha512-UjNnynb6eLAB0lyh2PlTEkjRJORnNsVF1hbzU+PQv89/cyBV9GDRCy7JAcLQgeCLYT+3kaumWWZKEJvbaK74eQ==",
       "dev": true
     },
     "falafel": {
