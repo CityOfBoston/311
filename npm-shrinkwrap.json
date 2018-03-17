@@ -7284,14 +7284,21 @@
       }
     },
     "fetch-mock": {
-      "version": "5.12.2",
-      "resolved": "https://registry.npmjs.org/fetch-mock/-/fetch-mock-5.12.2.tgz",
-      "integrity": "sha1-B/3mtx9xgyi0zpuByCp8EcBdl0g=",
+      "version": "6.1.1",
+      "resolved": "https://registry.npmjs.org/fetch-mock/-/fetch-mock-6.1.1.tgz",
+      "integrity": "sha512-Ak3vbLBIw3tB+bO6MTkWKVR4bLlYrpHOd/RmeyusxDyz1O+pFk0qygsmA85iChKh/H0QQHMcLclOesyiLoQ4YA==",
       "dev": true,
       "requires": {
         "glob-to-regexp": "0.3.0",
-        "node-fetch": "1.7.2",
-        "path-to-regexp": "1.7.0"
+        "path-to-regexp": "2.2.0"
+      },
+      "dependencies": {
+        "path-to-regexp": {
+          "version": "2.2.0",
+          "resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-2.2.0.tgz",
+          "integrity": "sha512-zJcOPeBsraLjWXwUzFMPzH3QO2CmO1yRggtADPJjOTyCF5csQxfUGJL+CbyyRvIS09wOipi4F/fgRhdmVGSwxQ==",
+          "dev": true
+        }
       }
     },
     "figures": {
