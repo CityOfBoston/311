@@ -62,7 +62,7 @@
     "dotenv": "^4.0.0",
     "elasticsearch": "^14.0.0",
     "emotion": "^8.0.9",
-    "emotion-server": "^8.0.9",
+    "emotion-server": "^9.1.0",
     "fs-extra": "^4.0.0",
     "good": "^7.1.0",
     "good-console": "^6.4.0",
