@@ -78,7 +78,7 @@
     "inert": "^4.2.0",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",
-    "mapbox-gl": "^0.39.1",
+    "mapbox-gl": "^0.44.2",
     "mapbox-gl-supported": "^1.2.0",
     "mapbox.js": "^3.0.1",
     "mobx": "^4.1.0",
