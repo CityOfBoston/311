@@ -109,7 +109,7 @@
     "@storybook/addon-storyshots": "^3.2.12",
     "@storybook/react": "^3.2.12",
     "@zeit/next-bundle-analyzer": "^0.1.1",
-    "apollo-codegen": "^0.18.1",
+    "apollo-codegen": "^0.19.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.3",
