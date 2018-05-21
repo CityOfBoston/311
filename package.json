@@ -68,7 +68,7 @@
     "good-console": "^7.1.0",
     "good-squeeze": "^5.0.1",
     "graphql": "^0.11.7",
-    "graphql-tools": "^2.5.1",
+    "graphql-tools": "^3.0.2",
     "hapi": "^17.3.1",
     "hapi-accept-language2": "^2.0.2",
     "html5-history-api": "^4.2.8",
