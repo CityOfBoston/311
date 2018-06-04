@@ -13359,9 +13359,9 @@
       }
     },
     "mobx-utils": {
-      "version": "4.0.0",
-      "resolved": "https://registry.npmjs.org/mobx-utils/-/mobx-utils-4.0.0.tgz",
-      "integrity": "sha1-2r4lxRnvYfvunuQrmTWA1XB6N4k="
+      "version": "5.0.0",
+      "resolved": "https://registry.npmjs.org/mobx-utils/-/mobx-utils-5.0.0.tgz",
+      "integrity": "sha1-OE6AUGTCN7mpRGeIqeaCeKNDdhA="
     },
     "module-details-from-path": {
       "version": "1.0.3",
