@@ -5235,12 +5235,13 @@
       "integrity": "sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c="
     },
     "codecov": {
-      "version": "2.3.0",
-      "resolved": "https://registry.npmjs.org/codecov/-/codecov-2.3.0.tgz",
-      "integrity": "sha1-rSWixuBELRN0DZ1N27mj4nFDMPQ=",
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/codecov/-/codecov-3.0.3.tgz",
+      "integrity": "sha512-0QhresfeDaSDaApsv8NnCl5EYP8nMCSvsFUTGtxDHF6zthYcUPIAteLnPSew+cN8H4/4caN5aJ7mm1ZdIeGetQ==",
       "dev": true,
       "requires": {
         "argv": "0.0.2",
+        "ignore-walk": "3.0.0",
         "request": "2.81.0",
         "urlgrey": "0.4.4"
       }
@@ -9995,6 +9996,15 @@
       "resolved": "https://registry.npmjs.org/ignore/-/ignore-3.3.4.tgz",
       "integrity": "sha512-KjHyHxUgicfgFiTJaIA9DoeY3TIQz5thaKqm35re7RTVVB7zjF1fTMIDMXM4GUUBipR4FW8BvGnA115pZ/AxQQ==",
       "dev": true
+    },
+    "ignore-walk": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/ignore-walk/-/ignore-walk-3.0.0.tgz",
+      "integrity": "sha512-tKHrQ70YReq6IFyAs/XAQy91mgLVpLExNh3HrjExr6vqg8FLq/vd27D4eAN0K2PodhLjiQu5Xc2Q+AkW/T7hKQ==",
+      "dev": true,
+      "requires": {
+        "minimatch": "3.0.4"
+      }
     },
     "immutable": {
       "version": "3.8.2",
