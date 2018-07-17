@@ -63,7 +63,7 @@
     "elasticsearch": "^14.0.0",
     "emotion": "^8.0.9",
     "emotion-server": "^8.0.9",
-    "fs-extra": "^4.0.0",
+    "fs-extra": "^7.0.0",
     "good": "^8.1.1",
     "good-console": "^7.1.0",
     "good-squeeze": "^5.0.1",
