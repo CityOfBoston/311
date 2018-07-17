@@ -6814,6 +6814,12 @@
         }
       }
     },
+    "eslint-config-origami-component": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/eslint-config-origami-component/-/eslint-config-origami-component-1.0.0.tgz",
+      "integrity": "sha1-xqHXWLIns51QZ5b41ENFZTpwXkY=",
+      "dev": true
+    },
     "eslint-config-prettier": {
       "version": "2.3.0",
       "resolved": "https://registry.npmjs.org/eslint-config-prettier/-/eslint-config-prettier-2.3.0.tgz",
@@ -7491,14 +7497,51 @@
       }
     },
     "fetch-mock": {
-      "version": "5.12.2",
-      "resolved": "https://registry.npmjs.org/fetch-mock/-/fetch-mock-5.12.2.tgz",
-      "integrity": "sha1-B/3mtx9xgyi0zpuByCp8EcBdl0g=",
+      "version": "6.5.1",
+      "resolved": "https://registry.npmjs.org/fetch-mock/-/fetch-mock-6.5.1.tgz",
+      "integrity": "sha512-/8FofTRAwbzyFSUizMvC41mwnFyU8HFxjUf/L6LS+UtfZJseaA2HitbjjHfiUBIWlB0rnUyX81pep/tIKTaMtg==",
       "dev": true,
       "requires": {
-        "glob-to-regexp": "0.3.0",
-        "node-fetch": "1.7.2",
-        "path-to-regexp": "1.7.0"
+        "babel-polyfill": "6.26.0",
+        "eslint-config-origami-component": "1.0.0",
+        "eslint-config-prettier": "2.9.0",
+        "eslint-plugin-prettier": "2.6.2",
+        "glob-to-regexp": "0.4.0",
+        "path-to-regexp": "2.2.1",
+        "prettier": "1.13.7"
+      },
+      "dependencies": {
+        "eslint-config-prettier": {
+          "version": "2.9.0",
+          "resolved": "https://registry.npmjs.org/eslint-config-prettier/-/eslint-config-prettier-2.9.0.tgz",
+          "integrity": "sha512-ag8YEyBXsm3nmOv1Hz991VtNNDMRa+MNy8cY47Pl4bw6iuzqKbJajXdqUpiw13STdLLrznxgm1hj9NhxeOYq0A==",
+          "dev": true,
+          "requires": {
+            "get-stdin": "5.0.1"
+          }
+        },
+        "eslint-plugin-prettier": {
+          "version": "2.6.2",
+          "resolved": "https://registry.npmjs.org/eslint-plugin-prettier/-/eslint-plugin-prettier-2.6.2.tgz",
+          "integrity": "sha512-tGek5clmW5swrAx1mdPYM8oThrBE83ePh7LeseZHBWfHVGrHPhKn7Y5zgRMbU/9D5Td9K4CEmUPjGxA7iw98Og==",
+          "dev": true,
+          "requires": {
+            "fast-diff": "1.1.1",
+            "jest-docblock": "21.2.0"
+          }
+        },
+        "jest-docblock": {
+          "version": "21.2.0",
+          "resolved": "https://registry.npmjs.org/jest-docblock/-/jest-docblock-21.2.0.tgz",
+          "integrity": "sha512-5IZ7sY9dBAYSV+YjQ0Ovb540Ku7AO9Z5o2Cg789xj167iQuZ2cG+z0f3Uct6WeYLbU6aQiM2pCs7sZ+4dotydw==",
+          "dev": true
+        },
+        "prettier": {
+          "version": "1.13.7",
+          "resolved": "https://registry.npmjs.org/prettier/-/prettier-1.13.7.tgz",
+          "integrity": "sha512-KIU72UmYPGk4MujZGYMFwinB7lOf2LsDNGSOC8ufevsrPLISrZbNJlWstRi3m0AMuszbH+EFSQ/r6w56RSPK6w==",
+          "dev": true
+        }
       }
     },
     "figures": {
@@ -8858,9 +8901,9 @@
       }
     },
     "glob-to-regexp": {
-      "version": "0.3.0",
-      "resolved": "https://registry.npmjs.org/glob-to-regexp/-/glob-to-regexp-0.3.0.tgz",
-      "integrity": "sha1-jFoUlNIGbFcMw7/kSWF1rMTVAqs=",
+      "version": "0.4.0",
+      "resolved": "https://registry.npmjs.org/glob-to-regexp/-/glob-to-regexp-0.4.0.tgz",
+      "integrity": "sha512-fyPCII4vn9Gvjq2U/oDAfP433aiE64cyP/CJjRJcpVGjqqNdioUYn9+r0cSzT1XPwmGAHuTT7iv+rQT8u/YHKQ==",
       "dev": true
     },
     "glob-watcher": {
@@ -14749,21 +14792,10 @@
       "dev": true
     },
     "path-to-regexp": {
-      "version": "1.7.0",
-      "resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-1.7.0.tgz",
-      "integrity": "sha1-Wf3g9DW62suhA6hOnTvGTpa5k30=",
-      "dev": true,
-      "requires": {
-        "isarray": "0.0.1"
-      },
-      "dependencies": {
-        "isarray": {
-          "version": "0.0.1",
-          "resolved": "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz",
-          "integrity": "sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=",
-          "dev": true
-        }
-      }
+      "version": "2.2.1",
+      "resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-2.2.1.tgz",
+      "integrity": "sha512-gu9bD6Ta5bwGrrU8muHzVOBFFREpp2iRkVfhBJahwJ6p6Xw20SjT0MxLnwkjOibQmGSYhiUnf2FLe7k+jcFmGQ==",
+      "dev": true
     },
     "path-type": {
       "version": "1.1.0",
