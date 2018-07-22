@@ -7491,14 +7491,14 @@
       }
     },
     "fetch-mock": {
-      "version": "5.12.2",
-      "resolved": "https://registry.npmjs.org/fetch-mock/-/fetch-mock-5.12.2.tgz",
-      "integrity": "sha1-B/3mtx9xgyi0zpuByCp8EcBdl0g=",
+      "version": "6.5.2",
+      "resolved": "https://registry.npmjs.org/fetch-mock/-/fetch-mock-6.5.2.tgz",
+      "integrity": "sha512-EIvbpCLBTYyDLu4HJiqD7wC8psDwTUaPaWXNKZbhNO/peUYKiNp5PkZGKRJtnTxaPQu71ivqafvjpM7aL+MofQ==",
       "dev": true,
       "requires": {
-        "glob-to-regexp": "0.3.0",
-        "node-fetch": "1.7.2",
-        "path-to-regexp": "1.7.0"
+        "babel-polyfill": "6.26.0",
+        "glob-to-regexp": "0.4.0",
+        "path-to-regexp": "2.2.1"
       }
     },
     "figures": {
@@ -8858,9 +8858,9 @@
       }
     },
     "glob-to-regexp": {
-      "version": "0.3.0",
-      "resolved": "https://registry.npmjs.org/glob-to-regexp/-/glob-to-regexp-0.3.0.tgz",
-      "integrity": "sha1-jFoUlNIGbFcMw7/kSWF1rMTVAqs=",
+      "version": "0.4.0",
+      "resolved": "https://registry.npmjs.org/glob-to-regexp/-/glob-to-regexp-0.4.0.tgz",
+      "integrity": "sha512-fyPCII4vn9Gvjq2U/oDAfP433aiE64cyP/CJjRJcpVGjqqNdioUYn9+r0cSzT1XPwmGAHuTT7iv+rQT8u/YHKQ==",
       "dev": true
     },
     "glob-watcher": {
@@ -14749,21 +14749,10 @@
       "dev": true
     },
     "path-to-regexp": {
-      "version": "1.7.0",
-      "resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-1.7.0.tgz",
-      "integrity": "sha1-Wf3g9DW62suhA6hOnTvGTpa5k30=",
-      "dev": true,
-      "requires": {
-        "isarray": "0.0.1"
-      },
-      "dependencies": {
-        "isarray": {
-          "version": "0.0.1",
-          "resolved": "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz",
-          "integrity": "sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=",
-          "dev": true
-        }
-      }
+      "version": "2.2.1",
+      "resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-2.2.1.tgz",
+      "integrity": "sha512-gu9bD6Ta5bwGrrU8muHzVOBFFREpp2iRkVfhBJahwJ6p6Xw20SjT0MxLnwkjOibQmGSYhiUnf2FLe7k+jcFmGQ==",
+      "dev": true
     },
     "path-type": {
       "version": "1.1.0",
