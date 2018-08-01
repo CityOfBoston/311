@@ -2360,12 +2360,20 @@
       }
     },
     "apollo-link": {
-      "version": "0.8.0",
-      "resolved": "https://registry.npmjs.org/apollo-link/-/apollo-link-0.8.0.tgz",
-      "integrity": "sha512-iPuJyHhMZK0UGFfL9A9lBs0GxTD4b50cMq4xAtxq5poKe36A2Df0LiznWg3eZIergCyTjtvdeaCNO76LNSWx8w==",
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/apollo-link/-/apollo-link-1.2.2.tgz",
+      "integrity": "sha512-Uk/BC09dm61DZRDSu52nGq0nFhq7mcBPTjy5EEH1eunJndtCaNXQhQz/BjkI2NdrfGI+B+i5he6YSoRBhYizdw==",
       "requires": {
-        "apollo-utilities": "0.2.0-rc.2",
-        "zen-observable": "0.6.0"
+        "@types/graphql": "0.12.6",
+        "apollo-utilities": "1.0.17",
+        "zen-observable-ts": "0.8.9"
+      },
+      "dependencies": {
+        "@types/graphql": {
+          "version": "0.12.6",
+          "resolved": "https://registry.npmjs.org/@types/graphql/-/graphql-0.12.6.tgz",
+          "integrity": "sha512-wXAVyLfkG1UMkKOdMijVWFky39+OD/41KftzqfX1Oejd0Gm6dOIKjCihSVECg6X7PHjftxXmfOKA/d1H79ZfvQ=="
+        }
       }
     },
     "apollo-server-core": {
@@ -2402,9 +2410,12 @@
       }
     },
     "apollo-utilities": {
-      "version": "0.2.0-rc.2",
-      "resolved": "https://registry.npmjs.org/apollo-utilities/-/apollo-utilities-0.2.0-rc.2.tgz",
-      "integrity": "sha512-Fu4ORv36dX5ZrG0UOVjWLpd/K3nbLVA9Ji3yJfVKxpYynThXocTq1Wbp6mHbuYhuHDmtAHM5jN7xDlPRSK/AJQ=="
+      "version": "1.0.17",
+      "resolved": "https://registry.npmjs.org/apollo-utilities/-/apollo-utilities-1.0.17.tgz",
+      "integrity": "sha512-Mm8pS48QVV/CUbcUFN5TmbkdjIJtYw99qVqbBHnIwL8x0H2RW0NpzASpC+5+qSxD1sKNLUl9pA6F5Et/0bbaVg==",
+      "requires": {
+        "fast-json-stable-stringify": "2.0.0"
+      }
     },
     "app-root-path": {
       "version": "2.0.1",
@@ -4922,6 +4933,15 @@
       "resolved": "https://registry.npmjs.org/caseless/-/caseless-0.12.0.tgz",
       "integrity": "sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=",
       "dev": true
+    },
+    "casual": {
+      "version": "1.5.19",
+      "resolved": "https://registry.npmjs.org/casual/-/casual-1.5.19.tgz",
+      "integrity": "sha512-zMWzIs7y4grU0mkb6ZAWyHVJFHRZ2V/zi9GTrVv9v9PcS4Ur3AHaKocl4DLjhLR0J5LnMhMsMiAjGooqYo2t1Q==",
+      "requires": {
+        "mersenne-twister": "1.1.0",
+        "moment": "2.18.1"
+      }
     },
     "catbox": {
       "version": "10.0.2",
@@ -9202,20 +9222,15 @@
       }
     },
     "graphql-tools": {
-      "version": "2.5.1",
-      "resolved": "https://registry.npmjs.org/graphql-tools/-/graphql-tools-2.5.1.tgz",
-      "integrity": "sha512-e8IBp3/eq/eKBGHJw3Dzx+0R6wNNp9Ae+fAA2U56Vxe//Qg+zUb1rIjOIgq5X7fdMsJK/tli3dfxEg6t5qc7ew==",
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/graphql-tools/-/graphql-tools-3.1.0.tgz",
+      "integrity": "sha512-PlWq66vMQ/Lcwz68BHCk9wBtqr6k3DOU280td2Hb742nY1PgHqW/2dVPwyRdSMwLDLlSM3jT0z8gcOk9cNCvwg==",
       "requires": {
-        "apollo-link": "0.8.0",
+        "apollo-link": "1.2.2",
+        "apollo-utilities": "1.0.17",
+        "casual": "1.5.19",
         "deprecated-decorator": "0.1.6",
-        "uuid": "3.1.0"
-      },
-      "dependencies": {
-        "uuid": {
-          "version": "3.1.0",
-          "resolved": "https://registry.npmjs.org/uuid/-/uuid-3.1.0.tgz",
-          "integrity": "sha512-DIWtzUkw04M4k3bf1IcpS2tngXEL26YUD2M0tMDUpnUrz2hgzUBlD55a4FjdLGPvfHxS6uluGWvaVEqgBcVa+g=="
-        }
+        "iterall": "1.2.2"
       }
     },
     "grid-index": {
@@ -10777,6 +10792,11 @@
       "requires": {
         "handlebars": "4.0.11"
       }
+    },
+    "iterall": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/iterall/-/iterall-1.2.2.tgz",
+      "integrity": "sha512-yynBb1g+RFUPY64fTrFv7nsjRrENBQJaX2UL+2Szc9REFrSNm1rpSXHGzhmAy7a9uv3vlvgBlXnf9RqmPH1/DA=="
     },
     "jest": {
       "version": "21.2.1",
@@ -13187,6 +13207,11 @@
       "resolved": "https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-1.0.1.tgz",
       "integrity": "sha1-sAqqVW3YtEVoFQ7J0blT8/kMu2E=",
       "dev": true
+    },
+    "mersenne-twister": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/mersenne-twister/-/mersenne-twister-1.1.0.tgz",
+      "integrity": "sha1-+RZhjuQ9cXnvz2Qb7EUx65Zwl4o="
     },
     "methods": {
       "version": "1.1.2",
@@ -20448,9 +20473,17 @@
       }
     },
     "zen-observable": {
-      "version": "0.6.0",
-      "resolved": "https://registry.npmjs.org/zen-observable/-/zen-observable-0.6.0.tgz",
-      "integrity": "sha512-G5v4eFZ1+qJC9U3iyldcc7OLsYfFf6/+/vywU3acbq0qq1PdFXsyfqtOUaQSTwhdbejO7AQWil3GzHxYlMchIg=="
+      "version": "0.8.9",
+      "resolved": "https://registry.npmjs.org/zen-observable/-/zen-observable-0.8.9.tgz",
+      "integrity": "sha512-Y9kPzjGvIZ5jchSlqlCpBW3I82zBBL4z+ulXDRVA1NwsKzjt5kwAi+gOYIy0htNkfuehGZZtP5mRXHRV6TjDWw=="
+    },
+    "zen-observable-ts": {
+      "version": "0.8.9",
+      "resolved": "https://registry.npmjs.org/zen-observable-ts/-/zen-observable-ts-0.8.9.tgz",
+      "integrity": "sha512-KJz2O8FxbAdAU5CSc8qZ1K2WYEJb1HxS6XDRF+hOJ1rOYcg6eTMmS9xYHCXzqZZzKw6BbXWyF4UpwSsBQnHJeA==",
+      "requires": {
+        "zen-observable": "0.8.9"
+      }
     }
   }
 }
