@@ -13339,9 +13339,9 @@
       }
     },
     "mobx": {
-      "version": "4.1.0",
-      "resolved": "https://registry.npmjs.org/mobx/-/mobx-4.1.0.tgz",
-      "integrity": "sha1-5KlnnNr74hWyDjLvk6cDGEWz8a8="
+      "version": "5.0.5",
+      "resolved": "https://registry.npmjs.org/mobx/-/mobx-5.0.5.tgz",
+      "integrity": "sha512-p7ziBDsE96g3zbGsWLc2h7M4mpFZh3EzRnXC3fk4jpf6XaJ3f1Wlpr3NIMAyek5L2yvdZj4faexTrEuHbyg9Iw=="
     },
     "mobx-react": {
       "version": "5.0.0",
