@@ -138,7 +138,7 @@
     "fetch-mock": "^5.9.4",
     "flow-bin": "^0.61.0",
     "gulp": "^3.9.1",
-    "gulp-babel": "^7.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-ignore": "^2.0.2",
     "gulp-plumber": "^1.1.0",
