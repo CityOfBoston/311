@@ -17865,18 +17865,24 @@
       "integrity": "sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0="
     },
     "sitemap": {
-      "version": "1.13.0",
-      "resolved": "https://registry.npmjs.org/sitemap/-/sitemap-1.13.0.tgz",
-      "integrity": "sha1-Vpy+IYAgKSamKiZs094Jyc60P4M=",
+      "version": "2.0.1",
+      "resolved": "https://registry.npmjs.org/sitemap/-/sitemap-2.0.1.tgz",
+      "integrity": "sha512-MRCugXgkX9BoKweEljgPPqEfvezcHdzjxLI2nKmemlkfsOiGumJBrjotEF+BtMaq7a/AREGXIMok+0GntJgdhw==",
       "requires": {
-        "underscore": "1.8.3",
-        "url-join": "1.1.0"
+        "lodash": "4.17.10",
+        "url-join": "4.0.0",
+        "xmlbuilder": "10.0.0"
       },
       "dependencies": {
-        "underscore": {
-          "version": "1.8.3",
-          "resolved": "https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz",
-          "integrity": "sha1-Tz+1OxBuYJf8+ctBCfKl6b36UCI="
+        "lodash": {
+          "version": "4.17.10",
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.10.tgz",
+          "integrity": "sha512-UejweD1pDoXu+AD825lWwp4ZGtSwgnpZxb3JDViD7StjQz+Nb/6l093lx4OQ0foGWNRoc19mWy7BzL+UAK2iVg=="
+        },
+        "xmlbuilder": {
+          "version": "10.0.0",
+          "resolved": "https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-10.0.0.tgz",
+          "integrity": "sha512-7RWHlmF1yU/E++BZkRQTEv8ZFAhZ+YHINUAxiZ5LQTKRQq//igpiY8rh7dJqPzgb/IzeC5jH9P7OaCERfM9DwA=="
         }
       }
     },
@@ -19467,9 +19473,9 @@
       }
     },
     "url-join": {
-      "version": "1.1.0",
-      "resolved": "https://registry.npmjs.org/url-join/-/url-join-1.1.0.tgz",
-      "integrity": "sha1-dBxsL0WWxIMNZxhGCSDQySIC3Hg="
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/url-join/-/url-join-4.0.0.tgz",
+      "integrity": "sha1-TTNA6AfTdzvamZH4MFrNzCpmXSo="
     },
     "url-loader": {
       "version": "0.5.9",
